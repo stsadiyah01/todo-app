@@ -116,19 +116,22 @@ ul li span:hover{
     .row{
         flex-direction: column;
         align-items: stretch;
-        padding: 10px;
+        padding: 0;
         gap: 10px;
+        background: transparent;
     }
     .row input{
         width: 100%;
         margin-bottom: 0;
         font-size: 14px;
-        padding: 12px;
+        padding: 14px 16 px;
+        background: #edeef0;
+        border-radius: 30px;
     }
     .row button{
         width: 100%;
         padding: 12px;
-        border-radius: 25px;
+        border-radius: 30px;
         font-size: 15px;
         margin: 0;
     }
