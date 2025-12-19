@@ -11,27 +11,28 @@ body{
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(135deg, #153677, #4e085f);
-    padding: 10px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .todo-app{
     width: 100%;
-    max-width: 540px;
+    max-width: 650px;
     background: #fff;
     margin: 20px auto;
-    padding: 40px 30px 70px;
-    border-radius: 10px;
+    padding: 45px 40px 80px;
+    border-radius: 12px;
 }
 .todo-app h2{
     color: #002765;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 26px;
 }
 .todo-app h2 img{
-    width: 30px;
+    width: 32px;
     margin-left: 10px;
 }
 .row{
@@ -39,7 +40,7 @@ body{
     align-items: center;
     justify-content: space-between;
     background: #edeef0;
-    border-radius: 30px;
+    border-radius: 35px;
     padding-left: 20px;
     margin-bottom: 25px;
 }
@@ -48,13 +49,13 @@ body{
     border: none;
     outline: none;
     background: transparent;
-    padding: 10px;
-    font-size: 14px;
+    padding: 14px;
+    font-size: 16px;
 }
 button{
     border: none;
     outline: none;
-    padding: 16px 50px;
+    padding: 16px 55px;
     background: #ff5945;
     color: #fff;
     font-size: 16px;
@@ -63,11 +64,12 @@ button{
 }
 ul li{
     list-style: none;
-    font-size: 17px;
-    padding: 12px 8px 12px 50px;
+    font-size: 16px;
+    padding: 14px 8px 14px 55px;
     user-select: none;
     cursor: pointer;
     position: relative;
+    line-height: 1.2;
 }
 ul li::before{
     content: '';
@@ -80,7 +82,7 @@ ul li::before{
     background-position:center;
     top: 50%;
     transform: translateY(-50%);
-    left: 8px;
+    left: 10px;
 }
 ul li.checked{
     color: #555;
@@ -92,7 +94,8 @@ ul li.checked::before{
 ul li span{
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 40px;
     height: 40px;
     font-size: 22px;
@@ -105,21 +108,20 @@ ul li span:hover{
     background: #edeef0;
 }
 .progress{
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     color: #555;
     font-size: 14px;
     padding-left: 10px;
 }
 
 @media (max-width:600px){
-
     .container{
         padding: 15px;
     }
     .todo-app{
         margin: 30px 12px;
-        padding: 25px 20px 35px;
-
+        padding: 30px 22px 40px;
+        max-width: 100%;
     }
     .row{
         flex-direction: column;
@@ -130,7 +132,6 @@ ul li span:hover{
     }
     .row input{
         width: 100%;
-        margin-bottom: 0;
         font-size: 14px;
         padding: 14px 16px;
         background: #edeef0;
@@ -141,7 +142,6 @@ ul li span:hover{
         padding: 12px;
         border-radius: 30px;
         font-size: 14px;
-        margin: 0;
     }
     .todo-app h2{
         font-size: 20px;
@@ -153,6 +153,6 @@ ul li span:hover{
     }
     ul li{
         font-size: 15px;
-        padding: 12px 8px 12px 45px;
+        padding: 12px 8px 12px 48px;
     }
 }
