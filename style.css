@@ -78,7 +78,8 @@ ul li::before{
     background-image: url(images/unchecked.png);
     background-size: cover;
     background-position:center;
-    top: 12px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 8px;
 }
 ul li.checked{
@@ -116,7 +117,7 @@ ul li span:hover{
         padding: 15px;
     }
     .todo-app{
-        margin: 0;
+        margin: 30px 12px;
         padding: 25px 20px 35px;
 
     }
@@ -130,7 +131,7 @@ ul li span:hover{
     .row input{
         width: 100%;
         margin-bottom: 0;
-        font-size: 15px;
+        font-size: 14px;
         padding: 14px 16px;
         background: #edeef0;
         border-radius: 30px;
